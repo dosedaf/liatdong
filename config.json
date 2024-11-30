@@ -1,0 +1,36 @@
+{
+	"app": {
+		"name": "liatdong"
+	},
+	"web": {
+		"port": 3000
+	},
+	"log": {
+		"level": 6
+	},
+	"database": {
+		"username": "yoda",
+		"password": "",
+		"host": "localhost",
+		"port": 5432,
+		"name": "liatdong",
+		"pool": {
+			"idle": 10,
+			"max": 100,
+			"lifetime": 300
+		},
+		"kafka": {
+			"bootstrap": {
+				"servers": "localhost:9092"
+			},
+			"group": {
+				"id": "liatdong"
+			},
+			"auto": {
+				"offset": {
+					"reset": "earliest"
+				}
+			}
+		}
+	}
+}
